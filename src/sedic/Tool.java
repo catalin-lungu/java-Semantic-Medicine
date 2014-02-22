@@ -50,7 +50,6 @@ public class Tool {
 			URL url = new URI("http", "localhost:3030", "/dataset/query", "query="+queryString+"&format="+format, "").toURL();
 			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setRequestMethod("GET");
-			//conn.setRequestProperty("Accept", "application/json");
 	
 			if (conn.getResponseCode() != 200) {
 				System.out.println("Failed : HTTP error code : "
@@ -77,68 +76,9 @@ public class Tool {
 			e.printStackTrace();
 	 
 		  } catch (URISyntaxException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
-/*		
-		Query query = QueryFactory.create(queryString);
-	///	QueryExecution xqExecution = QueryExecutionFactory.sparqlService(service, query);
-		
-		//qExecution.setTimeout(2000);
-//		ResultSet xresults = xqExecution.execSelect();   /// get stuck!!!!!!
-			
-//		
-		if(model==null){
-			//model = RDFDataMgr.loadModel("http://localhost:3030/dataset/data?graph=default");
-			model= RDFDataMgr.loadModel("file:///D:/Dropbox/WebMd3.nt"); //dbpedia.nt
-			RDFDataMgr.read(model, "file:///D:/Dropbox/dataExtractedUse.nt");
-			//RDFDataMgr.read(model, "file:///D:/Dropbox/dataExtractedLabel.nt");
-//			//RDFDataMgr.read(model, "file:///D:/Dropbox/WebMd0.nt");
-//			//RDFDataMgr.read(model, "file:///D:/Dropbox/WebMd1.nt");
-//			//RDFDataMgr.read(model, "file:///D:/Dropbox/WebMd2.nt");
-//			//RDFDataMgr.read(model, "file:///D:/Dropbox/WebMd3.nt");
-		}
-		
-		QueryExecution qExecution = QueryExecutionFactory.create(query, model);
-		ResultSet results = qExecution.execSelect();
-		
-		StringWriter writer = new StringWriter();
-		
-		if(format.toLowerCase().equals("xml")){
-			return ResultSetFormatter.asXMLString(results);
-		}
-		else if (format.toLowerCase().equals("text")) {
-			return ResultSetFormatter.asText(results);
-		}
-		else if (format.toLowerCase().equals("json")) {
-			ByteArrayOutputStream stream = new ByteArrayOutputStream();
-			ResultSetFormatter.outputAsJSON(stream , results);
-			return stream.toString();
-		}
-		else if (format.toLowerCase().equals("csv")) {
-			ByteArrayOutputStream stream = new ByteArrayOutputStream();
-			ResultSetFormatter.outputAsCSV(stream , results);
-			return stream.toString();
-		}
-		else if (format.toLowerCase().equals("tsv")) {
-			ByteArrayOutputStream stream = new ByteArrayOutputStream();
-			ResultSetFormatter.outputAsTSV(stream , results);
-			return stream.toString();	
-		}
-		else if (format.toLowerCase().equals("rdf")) {
-			results.getResourceModel().write(writer, "RDF/XML");
-		}
-		else if (format.toLowerCase().equals("n-triple")) {
-			results.getResourceModel().write(writer, "N-TRIPLE");
-		}
-		else if (format.toLowerCase().equals("turtle") || format.toLowerCase().equals("ttl")) {
-			results.getResourceModel().write(writer, "TURTLE");
-		}
-		else if (format.toLowerCase().equals("n3")) {
-			results.getResourceModel().write(writer, "N3");
-		}
-	*/	
 		return resultStringBuilder.toString();
 	}
 	

@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+
+#left_content{
+	width: 1000px;		
+}
+
+#left_content input{
+	float:right;
+}
+
+#query textarea{
+	padding: 2 auto;
+	height:100px;
+	width: 98%;
+}
+
+#result textarea{
+	padding: 2 auto;
+	height:100px;
+	width: 98%;
+}
+
+#sample{	
+	width: auto;	
+}
+#sample li{
+	list-style:none;
+}

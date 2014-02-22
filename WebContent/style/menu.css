@@ -1,0 +1,137 @@
+#global-nav .gn-link span,.gn-link:link span,.gn-link:visited span {
+	display: inline;
+	position: relative
+}
+
+#global-nav .gn-link,.gn-link:link,.gn-link:visited {
+	display: inline-block;
+	height: 49px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: normal;
+	font-size-adjust: none;
+	font-stretch: normal;
+	color: #FFF;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	margin: 0;
+	padding: 17px 20px 0
+}
+
+#global-nav a:link {	
+	color: #0063dc;
+	text-decoration:none;
+}
+
+#global-nav a:hover {
+	background-color: #fff;
+	color: #fff
+}
+
+#global-nav :-moz-any-link:focus {
+	outline-width: 0;
+	outline-style: none
+}
+
+#global-nav a,#global-nav a:hover {
+	background-color: transparent
+}
+
+#global-nav .need .needed
+	{
+	text-indent: -9999px;
+	display: block;
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-position: center center;
+	background-repeat: no-repeat
+}
+
+#global-nav .logo .refresh-logo-2013
+	{
+	text-indent: -9999px;
+	display: block;
+	position: absolute;
+	left: 0;
+	height: 70%;
+	width: 70%;
+	background-position: center center;
+	background-image:
+		url(images/green-leaf.png);
+	background-repeat: no-repeat
+}
+
+#global-nav body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td
+	{
+	margin: 0;
+	padding: 0
+}
+
+#global-nav div,#global-nav ul,#global-nav ol,#global-nav li,#global-nav form,#global-nav fieldset,#global-nav legend,#global-nav input,#global-nav textarea
+	{
+	color: #666;
+	margin: 0;
+	padding: 0
+}
+
+#global-nav .nav>ul {
+	height: 49px;
+	display: block;
+	position: relative
+}
+
+#global-nav .gn-wrap {
+	position: relative;
+	height: 100%;
+	margin: 0 auto
+}
+
+#global-nav {
+	color: #000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	height: 49px;
+	width: 100%;
+	min-width: 975px;
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0.8);
+	background-image: none;
+	background-repeat: repeat;
+	background-attachment: scroll;
+	background-position: 0 0;
+	background-clip: border-box;
+	background-origin: padding-box;
+	background-size: auto auto;
+	box-shadow: none;
+	margin: auto;
+	padding: 0
+}
+
+#global-nav {
+	padding: 0 0px
+}
+
+#global-nav .toplink {
+	cursor: pointer;
+	height: 49px;
+	display: block;
+	float: left
+}
+
+#global-nav .top-nav li:hover .gn-link,.top-nav li:focus .gn-link,#global-nav .toplink .gn-signup,#global-nav .toplink .gn-signup:hover,#global-nav .toplink .gn-signup:focus
+	{
+	color: #ff0084
+}
+
+#global-nav ol,#global-nav ul,li {
+	list-style-type: none;
+	list-style-image: none;
+	list-style-position: outside
+}

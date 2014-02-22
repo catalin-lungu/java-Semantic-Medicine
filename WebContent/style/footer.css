@@ -1,0 +1,11 @@
+#footer a, a:hover, a:visited
+{
+  color: gray;
+  text-decoration: none;
+  font-size: 90%;   
+}
+
+#footer p{
+	color: gray;
+	font-size: 80%; 
+}

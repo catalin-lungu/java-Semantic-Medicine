@@ -1,0 +1,28 @@
+@CHARSET "UTF-8";
+
+
+#myImageBody a {
+    border:1px solid #fff;
+    width:50px;
+    height:50px;
+    display:block;
+    position:absolute;
+    background-color:rgba(255,255,255,0.1);
+}
+#myImageBody a:hover {
+    background-color:rgba(255,255,255,0.3);
+}
+#myImage_zone1{
+    top:5px;
+    left:5px;
+    background-color: blue;
+}
+#myImage_zone2{
+    top:15px;
+    left:20px;
+    border-bottom-color: black;
+}
+#myImage_zone3{
+    top:28px;
+    left:10px;
+}
